@@ -1,3 +1,26 @@
 .badge-success {
 	background-color: #4fc36a !important;
 }
+
+.text-right-when-desktop-center-when-phone {
+	text-align: right!important;
+}
+
+.text-left-when-desktop-center-when-phone {
+	text-align: left!important;
+}
+
+@media (max-width: 550px) {
+	.text-right-when-desktop-center-when-phone {
+		text-align: center!important;
+	}
+	.text-left-when-desktop-center-when-phone {
+		text-align: center!important;
+	}
+	.mrM-auto {
+		margin: auto!important;
+	}
+	.mbM-2 {
+		margin-bottom: .5rem!important;
+	}
+}
