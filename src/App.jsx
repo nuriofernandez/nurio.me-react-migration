@@ -1,13 +1,28 @@
 import './App.css';
-import Container from './components/container';
-import Footer from './components/footer';
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+
+import Home from './pages/home';
+import Projects from './pages/projects';
 import Navbar from './components/navbar';
+import Footer from './components/footer';
+
+import "./App.css"
 
 function App() {
   return (
     <div class="web-body">
-      <Navbar />
-      <Container />
+      <BrowserRouter>
+        <Navbar />
+        <div id="content">
+          <div class="container">
+            <Switch>
+              <Route exact path="/projects" component={Projects} />
+              <Route exact path="/home" component={Home} />
+              <Route exact path="/" component={Home} />
+            </Switch>
+          </div>
+        </div>
+      </BrowserRouter>
       <Footer />
     </div>
   );
