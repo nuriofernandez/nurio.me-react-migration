@@ -9,7 +9,6 @@ function Navbar() {
                     <NavLink to="/">HOME</NavLink>
                     <NavLink to="/projects">PROJECTS</NavLink>
                     <NavLink to="/aboutme">ABOUT ME</NavLink>
-                    <NavLink to="/contact">CONTACT</NavLink>
                 </nav>
             </div>
         </div>
