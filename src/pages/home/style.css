@@ -1,0 +1,19 @@
+.image-home {
+	width: 340px;
+	max-width: 98%;
+	border-radius: 10px;
+    margin: 3px;
+}
+
+#home {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+#home>blockquote {
+	margin-bottom: 30px;
+}
+
+#home>blockquote>p {
+	color: #333;
+}
