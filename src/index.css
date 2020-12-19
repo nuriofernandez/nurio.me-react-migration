@@ -1,13 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900');
+html {
+  background-color: #2090d4;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background-color: #f9f9f9;
+  color: #555;
+  font-family: 'Muli', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: 'Muli', sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+@media (min-width: 48em) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 550px) {
+  nav {
+    width: 419px;
+  }
+  .blog-masthead {
+    overflow-x: scroll;
+  }
+  .index-text {
+    overflow: scroll;
+  }
+}
+
+nav {
+  font-family: 'Muli', sans-serif;
+  font-size: 15px;
+}
+
+.web-body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+.container {
+  max-width: 60rem;
+}
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  margin-bottom: 0px;
+  background-color: #2090d4;
+  -webkit-box-shadow: inset 0 -.1rem .25rem rgba(0, 0, 0, .1);
+  box-shadow: inset 0 -.1rem .25rem rgba(0, 0, 0, .1);
+}
+
+/* Nav links */
+
+.nav-link {
+  position: relative;
+  padding: 1rem;
+  font-weight: 700;
+  color: #cdddeb;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #fff;
+  background-color: transparent;
+}
+
+/* Active state gets a caret at the bottom */
+
+.nav-link.active {
+  color: #f9f9f9;
+}
+
+.nav-link.active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -.3rem;
+  vertical-align: middle;
+  content: "";
+  border-right: .3rem solid transparent;
+  border-bottom: .3rem solid;
+  border-left: .3rem solid transparent;
 }
