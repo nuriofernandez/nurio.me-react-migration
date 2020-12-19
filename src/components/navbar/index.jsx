@@ -1,14 +1,15 @@
 import React from 'react';
+import NavLink from '../NavLink';
 
 function Navbar() {
     return (
         <div className="blog-masthead">
             <div className="container">
                 <nav className="nav blog-nav">
-                    <a className="nav-link active" href="https://nurio.me/">HOME</a>
-                    <a className="nav-link" href="https://nurio.me/projects">PROJECTS</a>
-                    <a className="nav-link" href="https://nurio.me/aboutme">ABOUT ME</a>
-                    <a className="nav-link" href="https://nurio.me/contact">CONTACT</a>
+                    <NavLink to="/">HOME</NavLink>
+                    <NavLink to="/projects">PROJECTS</NavLink>
+                    <NavLink to="/aboutme">ABOUT ME</NavLink>
+                    <NavLink to="/contact">CONTACT</NavLink>
                 </nav>
             </div>
         </div>
