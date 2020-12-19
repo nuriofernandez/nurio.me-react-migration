@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Home from './pages/home';
 import Projects from './pages/projects';
@@ -11,11 +11,11 @@ import "./App.css"
 
 function App() {
   return (
-    <div class="web-body">
+    <div className="web-body">
       <BrowserRouter>
         <Navbar />
         <div id="content">
-          <div class="container">
+          <div className="container">
             <Switch>
               <Route exact path="/projects" component={Projects} />
               <Route exact path="/aboutme" component={Aboutme} />
