@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-class NavLink extends Component {
-    render() {
-        var isActive = false; // TODO : Redux implementation
-        var className = isActive ? 'nav-link active' : 'nav-link';
+function NavLink(props) {
+    const location = useLocation();
+    const isActive = location.pathname === props.to;
+    const className = isActive ? 'nav-link active' : 'nav-link';
 
-        return (
-            <Link className={className} {...this.props}>
-                {this.props.children}
-            </Link>
-        );
-    }
+    return (
+        <Link className={className} {...props}>
+            {props.children}
+        </Link>
+    );
 }
-
 
 export default NavLink;
