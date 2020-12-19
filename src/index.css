@@ -99,3 +99,11 @@ nav {
   border-bottom: .3rem solid;
   border-left: .3rem solid transparent;
 }
+
+.brs-8 {
+  border-radius: 8px;
+}
+
+.badge {
+  margin: 0px 2px;
+}
