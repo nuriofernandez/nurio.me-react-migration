@@ -5,7 +5,7 @@ import "./style.css";
 function Projects() {
     return (
         <div id="projects">
-            <div class="mobile-adapt">
+            <div className="mobile-adapt">
                 <ProjectCard
                     image="https://i.imgur.com/FSZib8a.png"
                     title="GLAUCUS"
@@ -39,14 +39,14 @@ function Projects() {
                     image="https://i.imgur.com/UGfi8Fb.png"
                     title="Minecraft servers"
                 >
-                    <p class="card-text">
+                    <p className="card-text">
                         Minecraft it's a sandbox game that allow users to create they own gamemodes.
                         For a few years I created and owned a lot of servers.
                     </p>
-                    <p class="card-text">
+                    <p className="card-text">
                         <b>NexusCraft</b>, <b>Lunatium</b>, <b>OceaNet</b>, <b>TempestPvP</b>, <b>EnergyPvP</b>, <b>MineGrech</b> and <b>Glaucus Network</b>.
 	                </p>
-                    <p class="card-text">
+                    <p className="card-text">
                         I got more than <b>700 online</b> simultaneous players and more than <b>one million</b> registered players.
                     </p>
                 </ProjectCard>
