@@ -1,7 +1,7 @@
 import React from 'react';
 import NavLink from '../NavLink';
 
-function Navbar() {
+const Navbar = () => {
     return (
         <div className="blog-masthead">
             <div className="container">

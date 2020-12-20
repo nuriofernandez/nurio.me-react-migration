@@ -9,7 +9,7 @@ import Footer from './components/footer';
 
 import "./App.css"
 
-function App() {
+const App = () => {
   return (
     <div className="web-body">
       <BrowserRouter>

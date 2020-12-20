@@ -6,7 +6,7 @@ import "./style.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faInstagramSquare, faLinkedin, faSteamSquare, faTwitterSquare, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
 
-function Footer() {
+const Footer = () => {
     return (
         <div id="footer" className="container blog-footer">
             <i>Starting from zero is the strength of innovation.</i>

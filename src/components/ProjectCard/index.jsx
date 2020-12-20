@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ProjectCard(props) {
+const ProjectCard = (props) => {
     return (
         <section style={{ margin: "50px 0px" }}>
             <div className="container">
@@ -8,14 +8,13 @@ function ProjectCard(props) {
                     <div className="row">
                         <div className="col-md-7">
                             <a href={props.link} target="_blank">
-                                <div className="card-img-bottom img-project-banner" style={
-                                    {
-                                        color: "#fff",
-                                        minHeight: "20rem",
-                                        height: "100%",
-                                        background: `url('${props.image}') center no-repeat`,
-                                        backgroundSize: "cover"
-                                    }}></div>
+                                <div className="card-img-bottom img-project-banner" style={{
+                                    color: "#fff",
+                                    minHeight: "20rem",
+                                    height: "100%",
+                                    background: `url('${props.image}') center no-repeat`,
+                                    backgroundSize: "cover"
+                                }}></div>
                             </a>
                         </div>
                         <div className="col-md-5">
@@ -30,7 +29,7 @@ function ProjectCard(props) {
                     </div>
                 </div>
             </div>
-        </section >
+        </section>
     )
 }
 

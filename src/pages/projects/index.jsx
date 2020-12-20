@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectCard from '../../components/ProjectCard';
 import "./style.css";
 
-function Projects() {
+const Projects = () => {
     return (
         <div id="projects">
             <div className="mobile-adapt">
@@ -45,7 +45,7 @@ function Projects() {
                     </p>
                     <p className="card-text">
                         <b>NexusCraft</b>, <b>Lunatium</b>, <b>OceaNet</b>, <b>TempestPvP</b>, <b>EnergyPvP</b>, <b>MineGrech</b> and <b>Glaucus Network</b>.
-	                </p>
+                    </p>
                     <p className="card-text">
                         I got more than <b>700 online</b> simultaneous players and more than <b>one million</b> registered players.
                     </p>

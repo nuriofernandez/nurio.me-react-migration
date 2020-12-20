@@ -1,7 +1,7 @@
 import React from 'react';
 import "./style.css";
 
-function Home() {
+const Home = () => {
     return (
         <div id="home">
             <h2 className="blog-post-title text-uppercase">I'm a developer.</h2>
