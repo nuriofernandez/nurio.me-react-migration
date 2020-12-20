@@ -5,16 +5,9 @@ import skills from './skills'
 
 const Aboutme = () => {
 
-    const printSkills = () => {
-        return skills.map(entry => {
-            return (
-                <SkillCard
-                    key={`skill-card-${entry.name}`}
-                    {...entry}
-                />
-            )
-        });
-    }
+    const skillsSection = skills.map(entry => {
+        return <SkillCard key={`skill-card-${entry.name}`} {...entry} />
+    });
 
     return (
         <div>
@@ -49,7 +42,7 @@ const Aboutme = () => {
                 <h2 className="blog-post-title">SKILLS</h2>
                 <hr />
 
-                {printSkills()}
+                {skillsSection}
 
                 <div style={{ height: "20px" }}></div>
 
