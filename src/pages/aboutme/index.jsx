@@ -20,7 +20,7 @@ const Aboutme = () => {
 
                 <div className="row text-left-when-desktop-center-when-phone">
 
-                    <div className="col-md-3">
+                    <div className="avatar col-md-3">
                         <img src="https://i.imgur.com/7a8fGGfm.png" height="240px" className="brs-8" />
                     </div>
 

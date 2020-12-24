@@ -10,17 +10,24 @@
 	text-align: left!important;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 960px) {
 	.text-right-when-desktop-center-when-phone {
-		text-align: center!important;
+		text-align: center !important;
 	}
 	.text-left-when-desktop-center-when-phone {
-		text-align: center!important;
+		text-align: center !important;
 	}
 	.mrM-auto {
-		margin: auto!important;
+		margin: auto !important;
 	}
 	.mbM-2 {
-		margin-bottom: .5rem!important;
+		margin-bottom: .5rem !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.avatar {
+		width: 250px !important;
+		max-width: 250px !important;
 	}
 }
